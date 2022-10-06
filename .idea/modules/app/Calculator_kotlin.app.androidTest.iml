@@ -132,5 +132,4 @@
       </configuration>
     </facet>
   </component>
-  <component name="TestModuleProperties" production-module="Calculator_kotlin.app.main" />
 </module>
