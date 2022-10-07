@@ -2,6 +2,9 @@ package com.example.calculatorkotlin
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
+import androidx.navigation.findNavController
+import androidx.navigation.fragment.NavHostFragment.Companion.findNavController
 import com.example.calculatorkotlin.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -13,6 +16,9 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)
-        setContentView(R.layout.activity_main)
+
+        binding.btnChange.setOnClickListener(View.OnClickListener {
+            findNavController(R.id.calc_frame).navigate(R.id.action_calculatorFragment_to_convertorFragment)
+        })
     }
 }
