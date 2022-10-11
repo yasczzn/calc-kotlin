@@ -19,22 +19,11 @@ class MainActivity : AppCompatActivity() {
         setContentView(view)
 
         binding.btnChange.setOnClickListener(View.OnClickListener {
-            findNavController(R.id.calc_frame).navigate(R.id.action_calculatorFragment_to_convertorFragment)
-        })
-
-        mViewPager!!.addOnPageChangeListener(ViewPager . OnPageChangeListener () {
-            fun onPageScrolled(position: Int, positionOffset: Float, positionOffsetPixels: Int) {}
-
-            fun onPageSelected(position: Int) {
-                when (position) {
-                    0 -> {
-                        supportActionBar?.setTitle(R.string.calc_page)
-                    }
-                    1 -> {
-                        supportActionBar?.setTitle(R.string.conv_page)
-                    }
-                    else -> {}
-                }
+            if(view!=CalculatorFragment) {
+                findNavController(R.id.calc_frame).navigate(R.id.action_convertorFragment_to_calculatorFragment)
+            } else {
+                findNavController(R.id.calc_frame).navigate(R.id.action_calculatorFragment_to_convertorFragment)
             }
+        })
     }
 }
