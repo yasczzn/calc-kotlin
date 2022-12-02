@@ -24,5 +24,14 @@ class CalculatorFragment : Fragment() {
 
     }
 
+    companion object{
+        fun newInstance() =
+            CalculatorFragment()
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
+    }
 
 }

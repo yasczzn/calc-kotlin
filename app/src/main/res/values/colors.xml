@@ -12,4 +12,6 @@
     <color name="fucshia">#D82148</color>
     <color name="green_mint">#7DD19B</color>
     <color name="light_ash">#DADBBD</color>
+    <color name="gray">#C3C8C5</color>
+    <color name="dark_gray">#6A6C6B</color>
 </resources>
