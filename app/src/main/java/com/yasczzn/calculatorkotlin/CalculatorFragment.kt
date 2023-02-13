@@ -24,8 +24,6 @@ class CalculatorFragment : Fragment() {
         _binding = FragmentCalculatorBinding.inflate(layoutInflater)
         return binding.root
 
-        binding.
-
     }
 
     fun numberAct(view: View) {
