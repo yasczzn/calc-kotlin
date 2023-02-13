@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".CalculatorFragment">
+    android:layout_height="match_parent">
+
+    <data class="FragmentCalculatorBinding"/>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        tools:context="com.yasczzn.calculatorkotlin.CalculatorFragment">
         <TextView
             android:id="@+id/tv_opr"
             style="@style/calc_et"
@@ -24,11 +26,13 @@
             android:paddingHorizontal="10dp">
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/clearAll"
+                android:onClick="clearAction"
                 style="@style/btn_ac"
                 android:text="AC"/>
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/erase"
+                android:onClick="backSpaceAction"
                 style="@style/btn_erase"
                 android:text="⌫"/>
 
@@ -129,10 +133,11 @@
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/equal"
+                android:onClick="equalAction"
                 style="@style/btn_equal"
                 android:text="="/>
         </LinearLayout>
 
     </LinearLayout>
 
-</FrameLayout>
+</layout>
