@@ -10,11 +10,15 @@
         <TextView
             android:id="@+id/tv_opr"
             style="@style/calc_et"
-            android:text="" />
+            android:textSize="30dp"
+            android:textColor="?attr/textColor"
+            android:text=""/>
 
         <TextView
             android:id="@+id/tv_result"
             style="@style/calc_et"
+            android:textSize="30dp"
+            android:textColor="?attr/textColor"
             android:text="" />
 
         <LinearLayout
@@ -22,17 +26,18 @@
             android:paddingHorizontal="10dp">
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/clear"
-                style="@style/btn_ac"
+                style="@style/btn_opr"
                 android:text="AC"/>
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/erase"
-                style="@style/btn_erase"
+                style="@style/btn_opr"
                 android:text="⌫"/>
 
             <androidx.appcompat.widget.AppCompatButton
                 style="@style/btn_"
-                android:text=""/>
+                android:text=""
+                tools:viewBindingIgnore="true"/>
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/divide"
@@ -45,17 +50,17 @@
             android:paddingHorizontal="10dp">
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/seven"
-                style="@style/btn_number"
+                style="@style/btn_"
                 android:text="7"/>
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/eight"
-                style="@style/btn_number"
+                style="@style/btn_"
                 android:text="8"/>
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/nine"
-                style="@style/btn_number"
+                style="@style/btn_"
                 android:text="9"/>
 
             <androidx.appcompat.widget.AppCompatButton
@@ -69,17 +74,17 @@
             android:paddingHorizontal="10dp">
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/four"
-                style="@style/btn_number"
+                style="@style/btn_"
                 android:text="4"/>
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/five"
-                style="@style/btn_number"
+                style="@style/btn_"
                 android:text="5"/>
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/six"
-                style="@style/btn_number"
+                style="@style/btn_"
                 android:text="6"/>
 
             <androidx.appcompat.widget.AppCompatButton
@@ -93,17 +98,17 @@
             android:paddingHorizontal="10dp">
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/one"
-                style="@style/btn_number"
+                style="@style/btn_"
                 android:text="1"/>
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/two"
-                style="@style/btn_number"
+                style="@style/btn_"
                 android:text="2"/>
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/three"
-                style="@style/btn_number"
+                style="@style/btn_"
                 android:text="3"/>
 
             <androidx.appcompat.widget.AppCompatButton
@@ -117,12 +122,12 @@
             android:paddingHorizontal="10dp">
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/dot"
-                style="@style/btn_number"
+                style="@style/btn_"
                 android:text="."/>
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/zero"
-                style="@style/btn_number"
+                style="@style/btn_"
                 android:text="0"/>
 
             <androidx.appcompat.widget.AppCompatButton

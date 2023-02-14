@@ -11,7 +11,7 @@
         android:id="@+id/_tab"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/white"
+        android:background="?attr/bgColor"
         app:layout_constraintTop_toTopOf="parent">
 
         <com.google.android.material.tabs.TabLayout
@@ -25,6 +25,7 @@
     <androidx.viewpager2.widget.ViewPager2
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/vpager"/>
+        android:id="@+id/vpager"
+        android:paddingTop="20dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

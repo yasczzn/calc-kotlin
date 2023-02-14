@@ -12,8 +12,8 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
-        <item name="textColor">#000000</item>
-        <item name="metaTextColor">@color/dark_gray</item>
-        <item name="bgColor">@color/light_ash</item>
+        <item name="textColor">@color/purple_navy</item>
+        <item name="metaTextColor">@color/navy</item>
+        <item name="bgColor">@color/white</item>
     </style>
 </resources>

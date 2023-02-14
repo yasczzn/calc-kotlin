@@ -22,8 +22,63 @@ class CalculatorFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         _binding = FragmentCalculatorBinding.inflate(layoutInflater)
-        return binding.root
 
+        binding.one.setOnClickListener{
+            numberAct(one)
+        }
+        binding.two.setOnClickListener{
+            numberAct(two)
+        }
+        binding.three.setOnClickListener{
+            numberAct(three)
+        }
+        binding.four.setOnClickListener{
+            numberAct(four)
+        }
+        binding.five.setOnClickListener{
+            numberAct(five)
+        }
+        binding.six.setOnClickListener{
+            numberAct(six)
+        }
+        binding.seven.setOnClickListener{
+            numberAct(seven)
+        }
+        binding.eight.setOnClickListener{
+            numberAct(eight)
+        }
+        binding.nine.setOnClickListener{
+            numberAct(nine)
+        }
+        binding.zero.setOnClickListener{
+            numberAct(zero)
+        }
+        binding.dot.setOnClickListener{
+            numberAct(dot)
+        }
+        binding.plus.setOnClickListener{
+            oprAct(plus)
+        }
+        binding.minus.setOnClickListener{
+            oprAct(minus)
+        }
+        binding.times.setOnClickListener{
+            oprAct(times)
+        }
+        binding.divide.setOnClickListener{
+            oprAct(divide)
+        }
+        binding.equal.setOnClickListener{
+            equalAct(equal)
+        }
+        binding.clear.setOnClickListener{
+            clearAllAct(clear)
+        }
+        binding.erase.setOnClickListener{
+            eraseAct(erase)
+        }
+
+        return binding.root
     }
 
     fun numberAct(view: View) {

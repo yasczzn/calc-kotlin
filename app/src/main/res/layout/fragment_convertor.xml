@@ -24,12 +24,12 @@
             android:paddingHorizontal="10dp">
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/clearAll"
-                style="@style/btn_ac"
+                style="@style/btn_"
                 android:text="AC"/>
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/erase"
-                style="@style/btn_erase"
+                style="@style/btn_"
                 android:text="⌫"/>
 
             <androidx.appcompat.widget.AppCompatButton
